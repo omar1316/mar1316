@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-container{
+    width: 80%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 35%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.role {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #007BFF;
+}
+
+.icons a:hover {
+    color: #0056b3;
+}
+
+/* Custom icon fonts */
+@font-face {
+    font-family: 'IconFont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+         url('iconfont.woff2') format('woff2'),
+         url('iconfont.woff') format('woff'),
+         url('iconfont.ttf') format('truetype'),
+         url('iconfont.svg#IconFont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.email-icon::before {
+    content: '\2709';
+}
+
+.linkedin-icon::before {
+    content: '\e601';
+}
+
+.twitter-icon::before {
+    content: '\e600';
+}
+.gallery-section{
+    display: inline;
+    margin-left: 400px;
+}
+.img_sw{
+    width: 50%;
+    margin-bottom: 40px;
+    border-radius: 7px;
+
+}
+.thumbnails{
+    display: flex;
+    margin-left: 750px;
+    margin-bottom: 50px;
+}
+.thumbnails img{
+    width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+.gallery-section .thumbnails img[data-selected="true"] {
+    border: 5px solid #000000;
+}
